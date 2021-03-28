@@ -12,6 +12,9 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send("hello its successfull")
+})
 
 const port = 5000;
 
